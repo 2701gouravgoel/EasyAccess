@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        ><TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="#000000"
+        android:text="Welcome Gourav"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textSize="40dp"
+
+        ></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textColor="#000000"
+                android:text="How can I help you"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textSize="30dp"
+                >
+            </TextView>
+            <ImageButton
+                android:id="@+id/voice_mike"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/mike"
+                ></ImageButton>
+
+        </LinearLayout>
+<ListView
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    ></ListView>
+        <EditText
+            android:id="@+id/ett"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textAllCaps="false"
+            >
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:background="#ffffff"
+                    android:layout_margin="2dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Do you want to call someone"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:background="#000000"
+                        >
+                        <ImageButton
+                            android:id="@+id/call1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/phone"
+                            />
+                        <ImageButton
+                            android:id="@+id/call2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/phone"
+                            />
+                        <ImageButton
+                            android:id="@+id/call3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/phone"
+                            />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="#000000"
+                            >
+
+                            <ImageButton
+                                android:id="@+id/call4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:padding="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="8dp"
+                                android:src="@drawable/phone"
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Here is your fav. browse"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        >
+
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:background="#000000"
+                        >
+
+
+                        <ImageButton
+                            android:id="@+id/fb_Open"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/fb"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/insta_Open"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/insta"
+                            />
+                        <ImageButton
+                            android:id="@+id/Codechef_Open"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/codechef"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/codeforces_Open"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/codeforces"
+                            android:layout_marginTop="4dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_margin="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="enter your song"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/your_song"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="2dp"
+                        android:textSize="20dp"
+                        android:hint="eg: faded"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <Button
+                            android:id="@+id/listen_youtube"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="On Youtube"
+                            android:textSize="10dp"
+                            >
+
+                        </Button>
+
+                        <Button
+                            android:id="@+id/listen_music"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Offline"
+                            android:textSize="10dp"
+                            >
+
+                        </Button>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Your Search"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/your_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="2dp"
+                        android:textSize="15dp"
+                        android:hint="eg: how to be a developer"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+                    <Button
+                        android:id="@+id/search_google"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:padding="2dp"
+                        android:text="Google search"
+                        android:textSize="10dp"
+                        >
+
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                >
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:layout_margin="2dp"
+                android:background="#ffffff"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seems bore refresh your memory"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    ></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/play_video"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/video"
+                            android:layout_marginLeft="10dp"
+                            >
+
+                        </ImageButton>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="play video"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/play_images"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/images"
+                            >
+
+                        </ImageButton>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="open gallery"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+        </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="check this"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    >
+
+                </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/play_tune1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tune"
+                            >
+
+                        </ImageButton>
+                        <ImageButton
+                            android:id="@+id/play_tune5"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tune"
+                            >
+
+                        </ImageButton>
+                        <ImageButton
+                            android:id="@+id/play_tune2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tune"
+                            >
+
+                        </ImageButton>
+                        <ImageButton
+                            android:id="@+id/play_tune3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tune"
+                            >
+
+                        </ImageButton>
+
+                        <ImageButton
+                            android:id="@+id/play_tune4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tune"
+                            >
+
+                        </ImageButton>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageButton
+                            android:layout_marginLeft="30dp"
+                            android:id="@+id/play_button"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/play"
+                            >
+
+                        </ImageButton>
+                        <ImageButton
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/pause_button"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/pause"
+                            >
+
+                        </ImageButton>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="/@gourav"
+                    android:layout_marginTop="3dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:textColor="#000000"
+                    >
+
+                </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
